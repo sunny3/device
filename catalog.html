@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>device-catalog</title>
+</head>
+<body>
+  <header>
+    <h1>Device</h1>
+    <nav class="first-nav">
+      <form action="get">
+        <input type="search" name="main-search" placeholder="Поиск по сайту">
+      </form>
+      <ul class="main-nav">
+        <li><a href="">Войти</a></li>
+        <li><a href="">Сравнить</a></li>
+        <li><a href="">Корзина</a></li>
+      </ul>
+    </nav>
+      <ul class="second-nav">
+        <li><a href="">Каталог товаров</a></li>
+        <li><a href="">Войти</a></li>
+        <li><a href="">Гарантия</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Моноподы для селфи</h1>
+      <span class="way">Главная>Каталог товаров>моноподы для селфи</span>
+      <div class="main-content catalog-clearfix">
+         <aside>
+            <form class="catalog-form" action="#" method="get">
+               <h2>Фильтр</h2>
+               <div class="price">
+                  <div class="value">
+                     <h2 class="catalog-title">Стоимость:</h2>
+                  </div>
+                  <div class="range">
+                     <div class="range-controls">
+                        <div class="scale">
+                           <div class="bar"></div>
+                        </div>
+                        <div class="range-item range-item-left"></div>
+                        <div class="range-item range-item-right"></div>
+                     </div>
+                     <div class="price-controls">
+                        <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                        <label class="max-price">до <input name="max-price" type="text" value="5 000"></label>
+                     </div>
+                  </div>
+               </div>
+               <div class="colors">
+                  <h2 class="catalog-title">Цвета:</h2>
+                  <p><label class="name-checkbox">
+                     <input type="checkbox" name="black" checked>
+                     <span class="catalog-checkbox-indicator"></span>
+                     <span class="title-checkbox">Чёрный</span>
+                     </label>
+                  </p>
+                  <p><label class="name-checkbox">
+                     <input type="checkbox" name="white">
+                     <span class="catalog-checkbox-indicator"></span>
+                     <span class="title-checkbox">Белый</span>
+                     </label>
+                  </p>
+                  <p><label class="name-checkbox">
+                     <input type="checkbox" name="dark-blue" checked>
+                     <span class="catalog-checkbox-indicator"></span>
+                     <span class="title-checkbox">Синий</span>
+                     </label>
+                  </p>
+                  <p><label class="name-checkbox">
+                     <input type="checkbox" name="red">
+                     <span class="catalog-checkbox-indicator"></span>
+                     <span class="title-checkbox">Красный</span>
+                     </label>
+                  </p>
+                  <p><label class="name-checkbox">
+                     <input type="checkbox" name="purple">
+                     <span class="catalog-checkbox-indicator"></span>
+                     <span class="title-checkbox">Розовый</span>
+                     </label>
+                  </p>
+               </div>
+               <div class="bluetooth">
+                  <h2 class="catalog-title">Bluetooth:</h2>
+                  <p><label class="name-radio">
+                     <input type="radio" name="bluetooth" value="yes" checked>
+                     <span class="catalog-radio-indicator"></span>
+                     <span class="title-radio">Да</span>
+                     </label>
+                  </p>
+                  <p><label class="name-radio">
+                     <input type="radio" name="bluetooth" value="no">
+                     <span class="catalog-radio-indicator"></span>
+                     <span class="title-radio">Нет</span>
+                     </label>
+                  </p>
+               </div>
+               <input class="btn catalog-btn" id="show-btn" type="submit" value="Показать">
+            </form>
+         </aside>
+    </div>
+    <div class="product">
+       <div class="product-options catalog-clearfix">
+          <div class="sorting">
+             <h2>Сортировка:</h2>
+          </div>
+          <div class="sorting-option catalog-clearfix">
+             <div class="name-type">
+                <ul>
+                   <li>
+                      <a class="active" href="#">По цене</a>
+                   </li>
+                   <li>
+                      <a href="#">По типу</a>
+                   </li>
+                   <li>
+                      <a href="#">По популярности</a>
+                   </li>
+                </ul>
+             </div>
+             <div class="sorting-up-down">
+                <ul>
+                   <li>
+                      <a class="sorting-up active" href="#">&#9660;</a>
+                   </li>
+                   <li>
+                      <a class="sorting-down" href="#">&#9650;</a>
+                   </li>
+                </ul>
+             </div>
+          </div>
+       </div>
+  </div>
+  <div class="card">
+    <div class="card-item">
+      <div class="card-item-picture"><img src="" alt=""></div>
+      <span class="card-item-name"></span>
+      <span class="card-item-value"></span>
+    </div>
+    <div class="card-item">
+      <div class="card-item-picture"><img src="" alt=""></div>
+      <span class="card-item-name"></span>
+      <span class="card-item-value"></span>
+    </div>
+    <div class="card-item">
+      <div class="card-item-picture"><img src="" alt=""></div>
+      <span class="card-item-name"></span>
+      <span class="card-item-value"></span>
+    </div>
+    <div class="card-item">
+      <div class="card-item-picture"><img src="" alt=""></div>
+      <span class="card-item-name"></span>
+      <span class="card-item-value"></span>
+    </div>
+  </div>
+</div>
+  </main>
+  <footer>
+    <div class="first-line">
+    <b>Device</b>
+    <ul class="main-nav">
+      <li><a href="">Войти</a></li>
+      <li><a href="">Сравнить</a></li>
+      <li><a href="">Корзина</a></li>
+    </ul>
+    </div>
+    <div class"second-line">
+    <span>г. Москва, ул. Строителей, 15</span>
+    <ul class="second-nav">
+      <li><a href="">Доставка</a></li>
+      <li><a href="">Гарантия</a></li>
+      <li><a href="">Контакты</a></li>
+    </ul>
+  <span>Тел.:+7(495)495-95-95
+  </span>
+  </div>
+  <div class="social-buttons">
+    <div class="social-button"></div>
+    <div class="social-button"></div>
+    <div class="social-button"></div>
+  </div>
+  </footer>
+</body>
+</html>
