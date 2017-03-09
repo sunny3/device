@@ -1,0 +1,103 @@
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.second-slider {
+  width: 282px;
+  height: 175px;
+  position: relative;
+  border-right: 5px solid black;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.second-slider input {
+  display: none;
+}
+
+.second-slider label {
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  width: 160px;
+  padding-top: 10px;
+  min-height: 30px;
+  display: inline-block;
+  margin-bottom: 50px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.second-slider label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 8px;
+  top: 48%;
+  transform: translate(0, -50%);
+  left: 0;
+  z-index: -1;
+  background-color: rgb(240, 197, 46);
+}
+
+.second-slider label::nth-child(1)::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1180px;
+  height: 50px;
+  z-index: -1000;
+  top: 0;
+  left: 0;
+  background-color: rgb(229, 229, 229);
+}
+
+.second-slider .slides {
+  display: block;
+  position: absolute;
+  left: 142%;
+  top: 0;
+}
+
+.second-slider .slide {
+  display: none;
+}
+
+.second-slider .slide-text {
+  font-family: "OpenSans", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  width: 440px;
+}
+
+.second-slider .slide-title {
+  font-family: "Gilroy", sans-serif;
+  font-size: 47px;
+  line-height: 47px;
+}
+
+.second-slider label:last-child {
+  margin-bottom: 80px;
+}
+
+.second-slider input:checked + label {
+  background-color: black;
+  cursor: default;
+  color: rgb(247, 225, 132);
+  border-right: 125px solid black;
+}
+
+.second-slider input:checked + label::before {
+  opacity: 0;
+}
+
+.second-slider input[id="btn-1"]:checked ~ .slides .slide:nth-child(1),
+.second-slider input[id="btn-2"]:checked ~ .slides .slide:nth-child(2),
+.second-slider input[id="btn-3"]:checked ~ .slides .slide:nth-child(3)  {
+  display: block;
+}
