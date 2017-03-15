@@ -8,7 +8,8 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="main-header">
+    <div class="main-menu">
     <h1>Device</h1>
     <nav class="first-nav">
       <form action="get">
@@ -22,25 +23,31 @@
     </nav>
       <ul class="second-nav">
         <li><a href="">Каталог товаров</a></li>
-        <li><a href="">Войти</a></li>
+        <li><a href="#">Доставка</a></li>
         <li><a href="">Гарантия</a></li>
         <li><a href="">Контакты</a></li>
       </ul>
+    </div>
   </header>
   <main>
   <div class="first-slider">
-    <input type="radio" name="slider-1">
-    <span class="radio-indicator"></span>
-    <input type="radio" name="slider-1">
-    <span class="radio-indicator"></span>
-    <input type="radio" name="slider-1">
-    <span class="radio-indicator"></span>
+    <input type="radio" id="fbtn-1" name="toggle" checked>
+    <span class="slider-indicator"></span>
+    <input type="radio" id="fbtn-2" name="toggle">
+    <span class="slider-indicator"></span>
+    <input type="radio" id="fbtn-3" name="toggle">
+    <span class="slider-indicator"></span>
+    <div class="slide-control">
+       <label for="fbtn-1"></label>
+       <label for="fbtn-2"></label>
+       <label for="fbtn-3"></label>
+    </div>
     <div class="slides">
       <div class="slide">
         <h2 class="slide-title">Делай селфи, как Бен Стиллер!</h2>
         <p class="slide-text">Самая длинная палка для селфи доступна в нашем магазине.
           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-        <a href="">Подробнее</a>
+        <a href="" class="btn">Подробнее</a>
         <!-- <ul>
           <li>8,5 м
             <ul>
@@ -59,12 +66,12 @@
           </li>
         </ul> -->
       <table>
-        <tr>
+        <tr class="value">
           <th>8,5м</th>
           <th>5кг</th>
           <th>Карбон</th>
         </tr>
-        <tr>
+        <tr class="characters">
           <th>Длина палки</th>
           <th>Вес</th>
           <th>Материал</th>
@@ -76,12 +83,12 @@
           правильно!</h2>
         <p class="slide-text">Мотивирующие фитнесс-браслеты помогут найти в себе силы
           не пропускать занятия и соблюдать диету.</p>
-        <a href="">Подробнее</a>
+        <a href="" class="btn">Подробнее</a>
         <table>
-          <tr>
+          <tr class="value">
             <th>48 часов</th>
           </tr>
-          <tr>
+          <tr class="characters">
             <th>Без подзарядки</th>
           </tr>
         </table>
@@ -91,13 +98,13 @@
           жалит как пчела!</h2>
         <p class="slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен
           мощным лазером, замаскированным под стандартную камеру.</p>
-        <a href="">Подробнее</a>
+        <a href="" class="btn">Подробнее</a>
         <table>
-          <tr>
+          <tr class="value">
             <th>800 м</th>
             <th>50 м</th>
           </tr>
-          <tr>
+          <tr class="characters">
             <th>Дальность полета</th>
             <th>Радиус поражения</th>
           </tr>
@@ -107,33 +114,33 @@
   </div>
   <div class="service">
     <div class="service-item">
-      <a class="service-item-picture"></a>
+      <a href="#" class="service-item-picture"></a>
       <a href="#" class="service-item-description">Виртуальная реальность</a>
     </div>
     <div class="service-item">
-      <a class="service-item-picture"></a>
+      <a href="#" class="service-item-picture"></a>
       <a href="#" class="service-item-description">Моноподы для селфи</a>
     </div>
     <div class="service-item">
-      <a class="service-item-picture"></a>
+      <a href="#" class="service-item-picture"></a>
       <a href="#" class="service-item-description">Экшн-камеры</a>
     </div>
     <div class="service-item">
-      <a class="service-item-picture"></a>
+      <a href="#" class="service-item-picture"></a>
       <a href="#" class="service-item-description">Фитнесс браслеты</a>
     </div>
     <div class="service-item">
-      <a class="service-item-picture"></a>
+      <a href="#" class="service-item-picture"></a>
       <a href="#" class="service-item-description">Умные часы</a>
     </div>
     <div class="service-item">
-      <a class="service-item-picture"></a>
+      <a href="#" class="service-item-picture"></a>
       <a href="#" class="service-item-description">Квадрокоптеры</a>
     </div>
   </div>
   <div class="container">
   <div class="second-slider">
-    <input type="radio" name="slider-2" id="btn-1">
+    <input type="radio" name="slider-2" id="btn-1" checked>
     <label for="btn-1" class="background-fon">Кредит</label>
     <input type="radio" name="slider-2" id="btn-2">
     <label for="btn-2">Доставка</label>
@@ -159,13 +166,11 @@
   </div>
   </div>
 </div>
-<div class="second-slider-background">
-</div>
     <div class="our-brands">
-      <div class="brand"><a><img src="" alt=""></a></div>
-      <div class="brand"><a><img src="" alt=""></a></div>
-      <div class="brand"><a><img src="" alt=""></a></div>
-      <div class="brand"><a><img src="" alt=""></a></div>
+      <div class="brand"><a href="#"><img src="img/logo-1-1.jpg" width="260" height="100" alt="brand-item-1"></a></div>
+      <div class="brand"><a href="#"><img src="img/logo-2-1.jpg" width="260" height="100" alt="brand-item-2"></a></div>
+      <div class="brand"><a href="#"><img src="img/logo-3-1.jpg" width="260" height="100" alt="brand-item-3"></a></div>
+      <div class="brand"><a href="#"><img src="img/logo-4-1.jpg" width="260" height="100" alt="brand-item-4"></a></div>
     </div>
   <div class="studio">
     <div class="about-us">
@@ -183,7 +188,7 @@
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис.
         Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-      <img src="" alt="">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6747.594797111875!2d37.52623316347136!3d55.688441851064745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1489413648698" width="560" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
       <a href="" class="btn">Напишите нам</a>
     </div>
   </div>
