@@ -11,9 +11,10 @@
   <header class="main-header">
     <div class="main-menu">
     <h1>Device</h1>
-    <nav class="first-nav">
+    <nav class="first-header-nav">
       <form action="get">
         <input type="search" name="main-search" placeholder="Поиск по сайту">
+        <input type="submit" name="search-btn" value="Найти">
       </form>
       <ul class="main-nav">
         <li><a href="">Войти</a></li>
@@ -23,6 +24,14 @@
     </nav>
       <ul class="second-nav">
         <li><a href="">Каталог товаров</a></li>
+        <ul class="hidden-menu">
+          <li><a>Виртуальная реальность</a></li>
+          <li><a>Моноподы для селфи</a></li>
+          <li><a>Экшн-камеры</a></li>
+          <li><a>Фитнесс браслеты</a></li>
+          <li><a>Умные часы</a></li>
+          <li><a>Квадрокоптеры</a></li>
+        </ul>
         <li><a href="#">Доставка</a></li>
         <li><a href="">Гарантия</a></li>
         <li><a href="">Контакты</a></li>
@@ -45,26 +54,10 @@
     <div class="slides">
       <div class="slide">
         <h2 class="slide-title">Делай селфи, как Бен Стиллер!</h2>
+        <img src="img/slider-1.png" width="384" height="486" alt="slide-1">
         <p class="slide-text">Самая длинная палка для селфи доступна в нашем магазине.
           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
         <a href="" class="btn">Подробнее</a>
-        <!-- <ul>
-          <li>8,5 м
-            <ul>
-              <li>Длина палки</li>
-            </ul>
-          </li>
-          <li>5 кг
-            <ul>
-              <li>Вес</li>
-            </ul>
-          </li>
-          <li>Карбон
-            <ul>
-              <li>Материал</li>
-            </ul>
-          </li>
-        </ul> -->
       <table>
         <tr class="value">
           <th>8,5м</th>
@@ -81,6 +74,7 @@
       <div class="slide">
         <h2 class="slide-title">Худеем
           правильно!</h2>
+        <img src="img/slider-2.png" width="345" height="485" alt="slide-1">
         <p class="slide-text">Мотивирующие фитнесс-браслеты помогут найти в себе силы
           не пропускать занятия и соблюдать диету.</p>
         <a href="" class="btn">Подробнее</a>
@@ -96,6 +90,7 @@
       <div class="slide">
         <h2 class="slide-title">Порхает как бабочка,
           жалит как пчела!</h2>
+        <img src="img/slider-3.png" width="526" height="334" alt="slide-1">
         <p class="slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен
           мощным лазером, замаскированным под стандартную камеру.</p>
         <a href="" class="btn">Подробнее</a>
@@ -169,10 +164,10 @@
 </div>
 </div>
     <div class="our-brands">
-      <div class="brand"><a href="#"><img src="img/logo-1-1.jpg" width="260" height="100" alt="brand-item-1"></a></div>
-      <div class="brand"><a href="#"><img src="img/logo-2-1.jpg" width="260" height="100" alt="brand-item-2"></a></div>
-      <div class="brand"><a href="#"><img src="img/logo-3-1.jpg" width="260" height="100" alt="brand-item-3"></a></div>
-      <div class="brand"><a href="#"><img src="img/logo-4-1.jpg" width="260" height="100" alt="brand-item-4"></a></div>
+      <div class="brand"><a href="#"></a></div>
+      <div class="brand"><a href="#"></a></div>
+      <div class="brand"><a href="#"></a></div>
+      <div class="brand"><a href="#"></a></div>
     </div>
   <div class="studio">
     <div class="about-us">
@@ -191,16 +186,34 @@
       <p>Вы можете забрать товар сами, заехав в наш офис.
         Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6747.594797111875!2d37.52623316347136!3d55.688441851064745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1489413648698" width="560" height="220" frameborder="0" style="border:0" class="map" allowfullscreen></iframe>
-      <a href="" class="btn">Напишите нам</a>
+      <a href="#" class="btn write-us-btn">Напишите нам</a>
     </div>
   </div>
-  <div class="modal-content">
+  <div class="empty-space">
+     <div class="modal-content">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <form class="writeus-form" action="#" method="post">
+           <div class="main-user-info">
+              <div class="user-info">
+                 <label for="user-name-id" class="contact-name">Ваше имя:</label>
+                 <input id="user-name-id" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
+              </div>
+              <div class="user-info">
+                 <label for="user-email-id">Ваш e-mail:</label>
+                 <input id="user-email-id" type="email" class="writeus-form-error" name="user-email" placeholder="Для отправки ответа">
+              </div>
+           </div>
+           <label for="text-id">Текст письма:</label>
+           <textarea id="text-id" rows="2" cols="70" name="text" placeholder="В свободной форме"></textarea>
+           <input class="btn" id="submit-btn" type="submit" value="Отправить">
+        </form>
+     </div>
   </div>
 </main>
 <footer class="main-footer">
   <div class="footer-menu">
   <div class="first-line">
-  <b>Device</b>
+  <b class="main-footer-title"><a>Device</a></b>
   <ul class="main-nav">
     <li><a href="">Войти</a></li>
     <li><a href="">Сравнить</a></li>
@@ -223,7 +236,8 @@
   <a href="" class="social-button">Twitter</a>
   <a href="https://htmlacademy.ru/" class="social-academy-button">Home, sweat home</a>
 </div>
-<div class="footer-menu">
+</div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
